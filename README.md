@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://leolee99.github.io/secureclaw/"><img src="https://img.shields.io/badge/Website-Online-1f883d?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"></a>
+  <a href="https://safo-lab.github.io/seclaw/"><img src="https://img.shields.io/badge/Website-Online-1f883d?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website"></a>
   <a href="https://www.npmjs.com/package/seclaw-agent"><img src="https://img.shields.io/npm/v/seclaw-agent?style=for-the-badge&logo=npm&label=Package" alt="Package"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-007ec6?style=for-the-badge" alt="MIT License"></a>
 </p>
