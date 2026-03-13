@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeClaw — Secured Agent for Personal AI Assistant</title>
+    <meta
+      name="description"
+      content="SeClaw is a secured personal AI agent with execution isolation, CFI/IFI validation, prompt-injection defense, and built-in rollback recovery."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="orb orb-a" aria-hidden="true"></div>
+    <div class="orb orb-b" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top">
+          <img src="./assets/icon_rm_bg.png" alt="SeClaw icon" />
+          <span>SeClaw</span>
+        </a>
+        <nav class="main-nav">
+          <a href="#profile">About</a>
+          <a href="#launch">Quick Start</a>
+          <a href="#security-layers">Security Layers</a>
+          <a href="#risk-coverage">Risk Coverage</a>
+        </nav>
+        <a class="btn btn-outline" href="https://github.com/leolee99/secureclaw" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section id="profile" class="hero container">
+        <div class="eyebrow">SECLAW SECURED AGENT · V0.1.0</div>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <h1>
+              SeClaw — <br>
+              <span>Secured Personal AI Assistant</span>
+            </h1>
+            <p>
+              Built for safe execution first: isolated actions, strict tool-call validation,
+              prompt-injection defense, risky-output sanitization, and one-command rollback when anything goes wrong.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#risk-coverage">Watch Demos</a>
+              <a class="btn btn-outline" href="#launch">Get Started</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <p class="panel-title">SeClaw Profile</p>
+            <div class="panel-row">
+              <span>Security Layers</span>
+              <strong class="counter" data-target="10">10</strong>
+            </div>
+            <div class="panel-row">
+              <span>Agent Risk Coverage</span>
+              <strong class="counter" data-target="8">8</strong>
+            </div>
+            <div class="panel-row">
+              <span>RAM Usage</span>
+              <strong>&lt;100MB</strong>
+            </div>
+            <div class="panel-row">
+              <span>Startup Speed</span>
+              <strong>~150ms</strong>
+            </div>
+            <div class="panel-line"></div>
+            <p class="panel-note">Defense-in-depth from input → execution → output.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="launch" class="section container launch">
+        <div class="section-heading">
+          <h2>Launch</h2>
+          <p>Install and run SeClaw in minutes — locally or with Docker isolation.</p>
+        </div>
+        <div class="launch-grid">
+          <div class="launch-card">
+            <h2>Launch in minutes</h2>
+            <p>Install dependencies, bootstrap config, and run gateway.</p>
+            <pre><code>npm install -g seclaw-agent
+
+seclaw onboard
+seclaw gateway</code></pre>
+          </div>
+
+          <div class="launch-card">
+            <h2>Run in Docker</h2>
+            <p>Enable agent execution isolation by running operations inside a Docker sandbox. Download <a href="https://www.docker.com/products/docker-desktop/" target="_blank" rel="noreferrer">Docker Desktop</a>, keep it running, then set <code>security.dockerSandbox.enabled</code> to <code>true</code> in your config.</p>
+            <pre><code>seclaw onboard
+# set security.dockerSandbox.enabled = true
+seclaw gateway</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="security-layers" class="section container">
+        <div class="section-heading">
+          <h2>Security Layers</h2>
+          <p>10 security mechanisms protect your agent procedure.</p>
+        </div>
+
+        <div class="layer-grid">
+          <article class="layer-card">
+            <span class="layer-icon">🧱</span>
+            <div>
+              <h3>Agent Execution Isolation</h3>
+              <p>Keeps the project on the host and routes only agent operations through Docker — minimising blast radius and protecting workspace files.</p>
+            </div>
+          </article>
+          <article class="layer-card">
+            <span class="layer-icon">♻️</span>
+            <div>
+              <h3>Snapshot &amp; Rollback</h3>
+              <p>CoW mechanics snapshot and restore mounted files in seconds, letting the agent work freely with a guaranteed recovery path.</p>
+            </div>
+          </article>
+          <article class="layer-card">
+            <span class="layer-icon">🛡️</span>
+            <div>
+              <h3>Prompt Injection Defense</h3>
+              <p>CFI/IFI at system level constrains valid action space; a guard model sanitises suspicious tool outputs before they re-enter the reasoning loop.</p>
+            </div>
+          </article>
+          <article class="layer-card">
+            <span class="layer-icon">🔍</span>
+            <div>
+              <h3>Skill Audit</h3>
+              <p>Scans skills for dangerous patterns — prompt injection, data exfiltration, and destructive shell commands.</p>
+            </div>
+          </article>
+          <article class="layer-card">
+            <span class="layer-icon">🧠</span>
+            <div>
+              <h3>Memory Audit</h3>
+              <p>Scans memory files for stored prompt-injection payloads, leaked credentials, and PII exposure risks at rest.</p>
+            </div>
+          </article>
+          <article class="layer-card">
+            <span class="layer-icon">📜</span>
+            <div>
+              <h3>Execution Audit</h3>
+              <p>Records full task traces and generates a post-execution risk report flagging potentially dangerous actions after each run.</p>
+            </div>
+          </article>
+          <article class="layer-card">
+            <span class="layer-icon">🔐</span>
+            <div>
+              <h3>Privacy Protection</h3>
+              <p>Monitors identity info, API keys, SSH keys, and credentials in real time — flagging exposures before they leak through tool outputs or channels.</p>
+            </div>
+          </article>
+          <article class="layer-card">
+            <span class="layer-icon">⚠️</span>
+            <div>
+              <h3>Risky Operation Protection</h3>
+              <p>Detects dangerous commands such as <code>rm -rf</code> or <code>sudo</code> and requires explicit user confirmation before execution.</p>
+            </div>
+          </article>
+          <article class="layer-card">
+            <span class="layer-icon">📡</span>
+            <div>
+              <h3>Secure Communication Isolation</h3>
+              <p>Maintains separate context windows per channel, blocking cross-channel prompt injection and inter-source manipulation.</p>
+            </div>
+          </article>
+          <article class="layer-card">
+            <span class="layer-icon">🌐</span>
+            <div>
+              <h3>Network Security Controls</h3>
+              <p>Enforces HTTPS, applies request timeouts, and supports configurable network modes to prevent uncontrolled external access.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="risk-coverage" class="section container">
+        <div class="section-heading">
+          <h2>Risk Coverage</h2>
+            <p>
+            SeClaw protects against 8 of the Top 10 OWASP 2026 Agent Risks. The remaining two risks, Insecure Inter-Agent Communication and Human-Agent Trust Exploitation, do not apply to the current Claw-based agent workflow.
+            </p>
+        </div>
+
+        <div class="risk-index">
+          <div class="risk-pill covered" data-src="./assets/goal_hijack.mp4" data-num="01" data-title="Agent Goal Hijack" data-desc="Block potential goal hijacking actions."><span class="risk-num">01</span><span class="risk-name">Agent Goal Hijack</span><button type="button" class="risk-badge risk-demo-btn" aria-label="Play Agent Goal Hijack demo">Demo</button></div>
+          <div class="risk-pill covered" data-src="./assets/tool_misuse.mp4" data-num="02" data-title="Tool Misuse" data-desc="Risky action prohibition."><span class="risk-num">02</span><span class="risk-name">Tool Misuse</span><button type="button" class="risk-badge risk-demo-btn" aria-label="Play Tool Misuse demo">Demo</button></div>
+          <div class="risk-pill covered" data-src="./assets/identity_and_privilege_abuse.mp4" data-num="03" data-title="Identity &amp; Privilege" data-desc="Privacy leakage prevention."><span class="risk-num">03</span><span class="risk-name">Identity &amp; Privilege</span><button type="button" class="risk-badge risk-demo-btn" aria-label="Play Identity and Privilege demo">Demo</button></div>
+          <div class="risk-pill covered" data-src="./assets/supply_chain.mp4" data-num="04" data-title="Supply Chain" data-desc="Malicious skill audit."><span class="risk-num">04</span><span class="risk-name">Supply Chain</span><button type="button" class="risk-badge risk-demo-btn" aria-label="Play Supply Chain demo">Demo</button></div>
+          <div class="risk-pill covered" data-src="./assets/code_execution.mp4" data-num="05" data-title="Code Execution" data-desc="Stealthy code attack protection."><span class="risk-num">05</span><span class="risk-name">Code Execution</span><button type="button" class="risk-badge risk-demo-btn" aria-label="Play Code Execution demo">Demo</button></div>
+          <div class="risk-pill covered" data-src="./assets/memory%20poisoning.mp4" data-num="06" data-title="Memory Poisoning" data-desc="Tool output sanitization."><span class="risk-num">06</span><span class="risk-name">Memory Poisoning</span><button type="button" class="risk-badge risk-demo-btn" aria-label="Play Memory Poisoning demo">Demo</button></div>
+          <div class="risk-pill covered" data-src="./assets/cascading_failures.mp4" data-num="08" data-title="Cascading Failures" data-desc="Long-term memory audit."><span class="risk-num">08</span><span class="risk-name">Cascading Failures</span><button type="button" class="risk-badge risk-demo-btn" aria-label="Play Cascading Failures demo">Demo</button></div>
+          <div class="risk-pill covered" data-src="./assets/agent_rogue.mp4" data-num="10" data-title="Rogue Agents" data-desc="Rollback protection."><span class="risk-num">10</span><span class="risk-name">Rogue Agents</span><button type="button" class="risk-badge risk-demo-btn" aria-label="Play Rogue Agents demo">Demo</button></div>
+        </div>
+
+        <div id="demo-stage" class="demo-stage" aria-hidden="true">
+          <div id="demo-stage-panel" class="demo-stage-panel">
+            <div class="demo-stage-header">
+              <div class="demo-stage-meta">
+                <span class="demo-stage-num" id="ds-num"></span>
+                <div>
+                  <h3 id="ds-title"></h3>
+                  <p id="ds-desc"></p>
+                </div>
+              </div>
+              <button type="button" id="ds-close" class="demo-stage-close" aria-label="Close demo">×</button>
+            </div>
+            <div class="demo-stage-media">
+              <video id="demo-stage-video" controls muted playsinline preload="metadata"></video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer container">
+      <span>© <span id="year"></span> SeClaw Agent</span>
+      <a href="https://github.com/leolee99/secureclaw" target="_blank" rel="noreferrer">Open Source on GitHub</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
