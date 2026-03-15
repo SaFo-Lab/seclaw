@@ -1,6 +1,10 @@
 # 🦾 SeClaw - Armored Personal AI Assistant
 
 <p align="center">
+  <a href="README.md"><strong>English</strong></a> | <a href="README.zh-CN.md">简体中文</a>
+</p>
+
+<p align="center">
   <img src="assets/logo.png" alt="SeClaw" width="500">
 </p>
 
