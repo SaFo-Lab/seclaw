@@ -1,4 +1,4 @@
-# 🦾 SeClaw - 安全武装的个人 AI 助手
+# 🦾 SeClaw - 可回溯的个人安全AI助手
 
 <p align="center">
   <a href="README.md">English</a> | <a href="README.zh-CN.md"><strong>简体中文</strong></a>
@@ -672,4 +672,10 @@ vllm serve meta-llama/Llama-3.1-8B-Instruct --port 8000
 
 ## 🙏 致谢
 
-本项目参考并受益于 [OpenClaw](https://github.com/openclaw/openclaw) 与 [Nanobot](https://github.com/HKUDS/nanobot) 的设计理念，感谢两个社区。
+本项目参考并受益于 [OpenClaw](https://github.com/openclaw/openclaw) 与 [Nanobot](https://github.com/HKUDS/nanobot) 的设计理念，感谢他们令人印象深刻的杰出的工作和社区。
+
+## 👥 贡献团队
+
+<p align="left">
+  <a href="https://github.com/leolee99"><img src="https://avatars.githubusercontent.com/u/41324200?v=4&s=48" width="48" height="48" alt="leolee99" title="leolee99"/></a> <a href="https://github.com/n1ngz"><img src="https://avatars.githubusercontent.com/u/20227702?v=4&s=48" width="48" height="48" alt="n1ngz" title="n1ngz"/></a> <a href="https://github.com/xiaochaowei"><img src="https://avatars.githubusercontent.com/u/5545848?v=4&s=48" width="48" height="48" alt="xiaochaowei" title="xiaochaowei"/></a>
+</p>

@@ -678,4 +678,10 @@ By default (`~/.seclaw/workspace`):
 
 ## 🙏 Acknowledgement
 
-This project builds on ideas from [OpenClaw](https://github.com/openclaw/openclaw) and [Nanobot](https://github.com/HKUDS/nanobot). Thanks to both communities.
+This project builds on ideas from [OpenClaw](https://github.com/openclaw/openclaw) and [Nanobot](https://github.com/HKUDS/nanobot). Thanks to their impressive works and communities!
+
+## 👥 Team
+
+<p align="left">
+  <a href="https://github.com/leolee99"><img src="https://avatars.githubusercontent.com/u/41324200?v=4&s=48" width="48" height="48" alt="leolee99" title="leolee99"/></a> <a href="https://github.com/n1ngz"><img src="https://avatars.githubusercontent.com/u/20227702?v=4&s=48" width="48" height="48" alt="n1ngz" title="n1ngz"/></a> <a href="https://github.com/xiaochaowei"><img src="https://avatars.githubusercontent.com/u/5545848?v=4&s=48" width="48" height="48" alt="xiaochaowei" title="xiaochaowei"/></a>
+</p>
